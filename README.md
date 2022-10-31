@@ -5,14 +5,14 @@ using Owin;
 
 # Add WebConfig ConnectionStrings
 
-  <connectionStrings>
+  < connectionStrings>
     <add name="connectionStringsName" connectionString="I7e/GcNwgGs5tC3crJDJG3AfdbKBCxCL2cYSA8Lg5I8OHrxpf96Rht2TsGSOjDeWWXof" providerName="System.Data.SqlClient" />
-  </connectionStrings>
+  </ connectionStrings>
   
-  //If the connectionString is encrypted, we will protect it from the hosting staff.
-  //Develop your SQL Injection models
-        #region SqlInjection
-        public string SqlInjection(string text)
+  <!--If the connectionString is encrypted, we will protect it from the hosting staff.-->
+  <!--Develop your SQL Injection models-->
+  
+   public string SqlInjection(string text)
         {
             if (!string.IsNullOrEmpty(text) && !string.IsNullOrEmpty(text))
             {
@@ -29,10 +29,9 @@ using Owin;
                 text = text.Replace("union ", "");
                 text = text.Replace("script ", "");
             }
-
             return text;
-        }
-        #endregion
+    }
+        
   # Add Startup 
   
     public class Startup    {
